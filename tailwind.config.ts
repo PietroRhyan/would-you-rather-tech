@@ -9,6 +9,7 @@ export default {
         "black-sec": "#1E1E1E",
 
         bg: "#12192C",
+        "light-bg": "#182445",
         
         white: "#FAFAFA",
         text: "#D4D4D4",
