@@ -20,6 +20,10 @@ export default function App() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
+        <meta name="author" content="João Gilberto & Pietro Rhyan" />
+        <meta name="keywords" content="website, browsergame, game, technology, development" />
+        <meta name="description" content="Would You Rather Tech is a game where you decide which setence you most agree and see other people answers." />
+        
         <Meta />
         <Links />
       </head>
