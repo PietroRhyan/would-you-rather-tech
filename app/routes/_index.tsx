@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { NavLink } from "@remix-run/react";
-import { FiArrowRight } from "react-icons/fi/index.js";
+import { FiArrowRight } from "react-icons/fi";
+import { GlowingButton } from "~/components/GlowingButton";
 import titleImage from '~/images/wyrt-title.svg';
 
 export const meta: MetaFunction = () => {
@@ -38,15 +39,15 @@ export default function Home() {
         </div>
 
         <div className="flex items-center gap-3">
-          <div className="flex items-center justify-center p-[1px] rounded-xl bg-gradient-to-r from-red to-blue">
-            <NavLink to="/play" className="flex items-center justify-center p-3 text-sm text-white bg-black-sec rounded-xl gap-[10px]">
+          <GlowingButton asChild>
+            <NavLink to="/play">
               Vamos jogar!
             </NavLink>
-          </div>
+          </GlowingButton>
 
-          <a href="/#" className="flex items-center gap-1 font-semibold underline text-xs">
+          <a href="/#" className="flex items-center gap-1 font-semibold underline text-xs group">
             registrar com github
-            <FiArrowRight size={12} strokeWidth={3} />
+            <FiArrowRight size={12} strokeWidth={3} className="group-hover:animate-letsgo" />
           </a>
         </div>
       </div>

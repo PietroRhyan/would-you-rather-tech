@@ -26,9 +26,26 @@ export default {
         "light-green": "#02DE40",
         green: "#09B73A",
         "dark-green": "#013D0A",
+      },
+
+      keyframes: {
+        letsgo: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(25%)' }
+        },
+        rotation: {
+          '0%': { '--gradient-angle': '0deg' },
+          '100%': { '--gradient-angle': '360deg' },
+        }
+      },
+
+      animation: {
+        letsgo: 'letsgo 0.6s ease-in-out infinite',
+        rotation: 'rotation 5s linear infinite'
       }
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 } satisfies Config
 
