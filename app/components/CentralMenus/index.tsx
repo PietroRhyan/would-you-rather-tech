@@ -25,7 +25,7 @@ const linkStyleDefault = "py-[6px] px-3 text-sm font-medium text-text hover:text
 
 export function CentralMenus() {
   return (
-    <menu className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center gap-2" >
+    <menu className="hidden lg:absolute lg:left-1/2 lg:-translate-x-1/2 md:flex items-center justify-center gap-2" >
       {menus.map(menu => (
         <NavLink 
           className={({ isActive }) => 

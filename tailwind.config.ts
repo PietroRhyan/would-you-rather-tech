@@ -42,7 +42,16 @@ export default {
       animation: {
         letsgo: 'letsgo 0.6s ease-in-out infinite',
         rotation: 'rotation 5s linear infinite'
-      }
+      },
+    },
+
+    screens: {
+      sm: '480px',
+      md: '768px',
+      mdp: '580px',
+      lg: '976px',
+      lgp: '1024px',
+      xl: '1440px',
     },
   },
   plugins: [
