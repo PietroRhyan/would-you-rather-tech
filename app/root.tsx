@@ -13,6 +13,7 @@ import {
 } from "@remix-run/react";
 
 import { Navbar } from "~/components/Navbar";
+import { Footer } from "./components/Footer";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet }
@@ -37,10 +38,10 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-bg text-white" >
+      <body className="bg-bg min-h-screen text-white flex flex-col justify-between" >
         <Navbar />
         <Outlet />
-
+        <Footer />
         
         <ScrollRestoration />
         <Scripts />

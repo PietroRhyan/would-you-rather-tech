@@ -13,14 +13,14 @@ export const meta: MetaFunction = () => {
 
 export default function Home() {
   return (
-    <div className="py-8 flex flex-col items-center gap-8">
+    <div className="py-5 flex flex-col items-center gap-5">
       <h1 className="text-2xl text-red-700">
         <span className="sr-only">Would You Rather Tech</span>
         <img src={titleImage} alt="Would You Rather Tech Title" />
       </h1>
 
       <div className="flex flex-col items-center gap-5">
-        <div className="flex flex-col items-center gap-10">
+        <div className="flex flex-col items-center gap-8">
           <p className="py-1 px-[1.125rem] border border-gray text-gray rounded-full text-xs font-medium">Opções de jogo</p>
 
           <div className="grid grid-cols-[minmax(0,1fr),auto,minmax(0,1fr)] gap-10">
