@@ -14,12 +14,14 @@ import {
 
 import { Navbar } from "~/components/Navbar";
 import { Footer } from "./components/Footer";
+import { Providers } from "./providers";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet }
 ];
 
 export default function App() {
+
   return (
     <html lang="en">
       <head>
@@ -39,9 +41,11 @@ export default function App() {
         <Links />
       </head>
       <body className="bg-bg min-h-screen text-white flex flex-col justify-between" >
-        <Navbar />
-        <Outlet />
-        <Footer />
+        <Providers>
+          <Navbar />
+          <Outlet />
+          <Footer />
+        </Providers>
         
         <ScrollRestoration />
         <Scripts />
