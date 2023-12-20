@@ -18,7 +18,8 @@
     "isbot": "^3.6.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.12.0"
+    "react-icons": "^4.12.0",
+    "tailwind-variants": "^0.1.19"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.3.1",

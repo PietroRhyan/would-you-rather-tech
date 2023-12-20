@@ -36,12 +36,12 @@ export default {
         rotation: {
           '0%': { '--gradient-angle': '0deg' },
           '100%': { '--gradient-angle': '360deg' },
-        }
+        },
       },
 
       animation: {
         letsgo: 'letsgo 0.6s ease-in-out infinite',
-        rotation: 'rotation 5s linear infinite'
+        rotation: 'rotation 5s linear infinite',
       },
     },
 
