@@ -1,7 +1,7 @@
-import { FaAngleDown } from 'react-icons/fa/index.js'
 import { MostVotedQuestionItem } from '../MostVotedQuestionItem'
 import { Pagination } from '../Pagination'
 import { useState } from 'react'
+import { FilterButton } from '../FilterButton/indesx'
 
 interface QuestionTypes {
   position: number
@@ -12,7 +12,7 @@ interface QuestionTypes {
 const questions: QuestionTypes[] = [
   {
     position: 1,
-    question: 'Lorem ipsum dolor sit',
+    question: 'Lorem ipsum dolor sit khjabdl jsbfsijdfb jsdlakd hasjbdahj',
     votes: 1998,
   },
   {
@@ -85,13 +85,10 @@ export function MostVotedQuestionRanking() {
   }
 
   return (
-    <div className="w-[600px] rounded-xl bg-black" >
-      <div className='w-full p-6 flex items-center justify-between' >
-        <h2 className='text-xl text-white font-semibold'>Perguntas mais votadas</h2>
-        <button className='bg-black-sec rounded-[4px] p-2 text-sm font-medium text-gray flex items-center justify-center gap-[2px]'>
-          All time
-          <FaAngleDown size={14} />
-        </button>
+    <div className="max-w-[600px] w-full rounded-xl bg-black" >
+      <div className='w-full p-4 md:p-6 flex items-center justify-between' >
+        <h2 className='sm:text-xl text-white font-semibold'>Perguntas mais votadas</h2>
+        <FilterButton />
       </div>
 
       <div className='flex flex-col justify-center'>
@@ -106,7 +103,7 @@ export function MostVotedQuestionRanking() {
         )) }
       </div>
 
-      <div className='flex items-center justify-end py-3 px-6' >
+      <div className='flex items-center justify-end py-3 px-4 md:px-6' >
         <Pagination 
           currentPage={currentPage} 
           recordsPerPage={recordsPerPage} 

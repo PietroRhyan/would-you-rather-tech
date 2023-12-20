@@ -46,6 +46,7 @@ export default {
     },
 
     screens: {
+      xs: '400px',
       sm: '480px',
       md: '768px',
       mdp: '580px',

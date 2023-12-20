@@ -1,7 +1,6 @@
-import type { ButtonHTMLAttributes } from 'react'
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa/index'
 
-interface PaginationProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface PaginationProps {
   recordsPerPage: number
   totalRecords: number
   currentPage: number
@@ -10,7 +9,7 @@ interface PaginationProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   goToSelectedPage: (page: number) => void
 }
 
-export function Pagination({ currentPage, recordsPerPage, totalRecords, goToPreviousPage, goToNextPage, goToSelectedPage, ...props }: PaginationProps) {
+export function Pagination({ currentPage, recordsPerPage, totalRecords, goToPreviousPage, goToNextPage, goToSelectedPage }: PaginationProps) {
   const numberOfPages = Math.ceil(totalRecords / recordsPerPage)
   const numbers = [...Array(numberOfPages + 1).keys()].slice(1)
 
