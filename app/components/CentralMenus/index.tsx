@@ -11,12 +11,12 @@ const menus: Menu[] = [
     link: "/play"
   },
   {
-    name: "Respostas mais votadas",
+    name: "Questões mais votadas",
     link: "/most-voted"
   },
   {
-    name: "Crie suas respostas",
-    link: "/create-answers"
+    name: "Crie suas questões",
+    link: "/create-questions"
   },
 ]
 

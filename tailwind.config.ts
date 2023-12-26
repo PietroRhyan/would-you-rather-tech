@@ -13,6 +13,7 @@ export default {
         
         white: "#FAFAFA",
         text: "#D4D4D4",
+        "dark-gray": "#636363",
         gray: "#A1A1A1",
 
         red: "#E52020",

@@ -13,7 +13,7 @@ export const meta: MetaFunction = () => {
 
 export default function Home() {
   return (
-    <div className="py-8 flex flex-col items-center gap-5 px-4 sm:px-8 md:px-12">
+    <main className="py-8 flex flex-col items-center gap-5 px-4 sm:px-8 md:px-12">
       <h1 className="text-2xl text-red-700">
         <span className="sr-only">Would You Rather Tech</span>
         <img src={titleImage} alt="Would You Rather Tech Title" />
@@ -51,6 +51,6 @@ export default function Home() {
           </a>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
