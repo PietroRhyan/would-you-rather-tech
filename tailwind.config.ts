@@ -44,6 +44,10 @@ export default {
         letsgo: 'letsgo 0.6s ease-in-out infinite',
         rotation: 'rotation 5s linear infinite',
       },
+
+      boxShadow: {
+        'glassmorphism-like': '0 0 8px 1px rgba(0,0,0,0.2), inset 19px 0 16px 4px rgba(24,81,229,0.25), inset -19px 0 16px 4px rgba(229,32,32,0.25)',
+      },
     },
 
     screens: {

@@ -19,7 +19,7 @@ const createFormSchema = z.object({
 type createFormData = z.infer<typeof createFormSchema>
 
 export function QuestionForm() {
-  const { register, handleSubmit, formState: {errors} } = useForm<createFormData>({ resolver: zodResolver(createFormSchema) })
+  const { register, handleSubmit, formState: {errors}, reset } = useForm<createFormData>({ resolver: zodResolver(createFormSchema) })
   const onSubmit: SubmitHandler<createFormData> = (data) => console.log(data)
 
   return (
@@ -57,7 +57,8 @@ export function QuestionForm() {
           </div>
         </Form>
 
-        <div className="flex justify-end pt-3"> 
+        <div className="flex justify-end pt-3 gap-2">
+          <button className="text-sm font-normal" onClick={() => reset()}>Cancelar</button> 
           <SubmitFormButton title="Enviar" type="submit" form="question-form"/>
         </div>
       </div>
