@@ -3,7 +3,9 @@ import { QuestionGroup } from "~/components/QuestionGroup";
 
 export default function Play() {
   const [questionGroupVoted, setQuestionGroupVoted] = useState(false)
-  
+
+  const totalVotes = 639 // Fake number
+
   function handleQuestionGroupVoted() {
     setQuestionGroupVoted(true)
   }
@@ -14,8 +16,8 @@ export default function Play() {
 
       <QuestionGroup>
         <QuestionGroup.Item 
-          questionVariants="left" 
-          totalQuestionVotes={639} 
+          questionVariants="left"
+          totalQuestionVotes={totalVotes} 
           votes={394} 
           showInfoWhenVoted={questionGroupVoted} 
           hasVoted={handleQuestionGroupVoted}
@@ -25,7 +27,7 @@ export default function Play() {
 
         <QuestionGroup.Item 
           questionVariants="right" 
-          totalQuestionVotes={639} 
+          totalQuestionVotes={totalVotes} 
           votes={245} 
           showInfoWhenVoted={questionGroupVoted} 
           hasVoted={handleQuestionGroupVoted} 
@@ -33,8 +35,6 @@ export default function Play() {
           Trabalhar 8 horas presencial por 3 dias
         </QuestionGroup.Item>
       </QuestionGroup>
-
-      
     </main>
   )
 }

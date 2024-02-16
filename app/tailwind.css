@@ -25,3 +25,21 @@ body {
   initial-value: 0deg;
   inherits: false;
 }
+
+/* Inner Shadow To Texts */
+/* text-shadow is not supported for Tailwind CSS */
+.inner-text-shadow-blue {
+  color: transparent;
+  text-shadow: 0px 2px 2px rgba(10, 35, 100, 0.4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
+.inner-text-shadow-red {
+  color: transparent;
+  text-shadow: 0px 2px 4px rgba(153, 14, 14, 0.6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
