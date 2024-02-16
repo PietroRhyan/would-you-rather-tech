@@ -38,11 +38,16 @@ export default {
           '0%': { '--gradient-angle': '0deg' },
           '100%': { '--gradient-angle': '360deg' },
         },
+        "fade-in": {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        }
       },
 
       animation: {
         letsgo: 'letsgo 0.6s ease-in-out infinite',
         rotation: 'rotation 5s linear infinite',
+        "fade-in": "fade-in 200ms linear"
       },
 
       boxShadow: {

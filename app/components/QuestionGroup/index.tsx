@@ -66,7 +66,8 @@ function QuestionItem({ children, totalQuestionVotes, votes, hasVoted, showInfoW
           })}
       >
         {showInfoWhenVoted ? (
-          <div className={`${voted ? "" : "bg-black/50"} w-full h-full rounded-lg flex flex-col items-center justify-center gap-4`} >
+          <div className={`w-full h-full rounded-lg flex flex-col items-center justify-center gap-4 relative`} >
+            <div className={`absolute ${voted ? "" : "bg-black/30"} animate-fade-in inset-0 top-0 left-0 right-0`}></div>
             <span className={`${questionVariants === 'left' ? 'inner-text-shadow-blue' : 'inner-text-shadow-red'} bg-black/80 text-6xl font-semibold`} >
               {votesPercentage} %
             </span>
