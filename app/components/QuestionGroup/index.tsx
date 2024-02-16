@@ -2,7 +2,7 @@ import { useState, type ComponentProps } from "react"
 import { tv, type VariantProps } from 'tailwind-variants'
 
 const question = tv({
-  base: "w-full h-full rounded-lg flex items-center justify-center ",
+  base: "w-full h-full rounded-lg flex items-center justify-center",
   variants: {
     questionVariants: {
       left: "bg-blue shadow-[0_0_16px_4px_rgba(24,81,229,0.25)]",
@@ -10,7 +10,7 @@ const question = tv({
     },
     buttonBehaviorVariants: {
       "no-behavior": "",
-      "physical-button-like": "transition-all duration-200 hover:w-[465px] hover:h-[320px]",
+      "physical-button-like": "md:transition-all md:duration-200 md:hover:w-[465px] md:hover:h-[320px]",
     },
   },
   defaultVariants: {
@@ -32,7 +32,7 @@ interface QuestionItemProps extends ComponentProps<'button'>, VariantProps<typeo
 
 function QuestionGroup({ children }: QuestionGroupProps) {
   return (
-    <section className="max-w-[960px] w-full h-[330px] grid grid-cols-2 gap-x-[10px] relative" >
+    <section className="max-w-[960px] w-full h-[420px] md:h-[330px] grid grid-grid-1 md:grid-cols-2 gap-y-[10px] md:gap-x-[10px] relative" >
       {children}
       <div className="h-[80px] w-[80px] bg-bg shadow-glassmorphism-like rounded-full z-20 flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" >
         <span className="font-semibold">ou</span>
@@ -69,12 +69,12 @@ function QuestionItem({ children, totalQuestionVotes, votes, hasVoted, showInfoW
           <div className={`w-full h-full rounded-lg flex flex-col items-center justify-center gap-4 relative`} >
             <div className={`absolute ${voted ? "" : "bg-black/30"} animate-fade-in inset-0 top-0 left-0 right-0`}></div>
             <span className={`${questionVariants === 'left' ? 'inner-text-shadow-blue' : 'inner-text-shadow-red'} bg-black/80 text-6xl font-semibold`} >
-              {votesPercentage} %
+              {votesPercentage}%
             </span>
-            <span className="font-semibold text-lg">{children}</span>
+            <span className="font-semibold text-base mx-7 lg:text-lg">{children}</span>
           </div>
         ) : (
-          <span className="font-semibold text-lg">{children}</span>
+          <span className="font-semibold text-base mx-7 lg:text-lg">{children}</span>
         )}
       </button>
     </div>
