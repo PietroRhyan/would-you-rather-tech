@@ -8,10 +8,10 @@ caso queira contribuir com o projeto ou apenas esteja curioso, siga as instruç�
 Primeiramente, clone o repositório do projeto onde você preferir:
 
 ```bash
-$ git clone <HTTPS URL ou Chave SSH do repo>
+$ git clone < HTTPS URL ou Chave SSH do repo >
 ```
 
-Após ter clonado o repositório na sua máquina, acesse a pasta que foi criada com o `git clone`e depois acesse a pasta que
+Após ter clonado o repositório na sua máquina, acesse a pasta que foi criada com o `git clone` e depois acesse a pasta que
 agrega todo o código do webserver da aplicação:
 
 ```bash
@@ -43,7 +43,7 @@ importadas por terceiros. Esta pasta pode ter diversas outras pastas que contemp
 
 ### /pkg
 
-O oposto da internal, aqui dedicaremos arquivos/ pastas que queremos que sejam compartilhadas e utilizadas por outras pessoas.
+O oposto da `internal`, aqui dedicaremos arquivos/ pastas que queremos que sejam compartilhadas e utilizadas por outras pessoas.
 
 ### /api
 
